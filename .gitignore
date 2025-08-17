@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar entornos virtuales
+venv/
+.venv/
+
+# Ignorar cachés de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignorar datos pesados
+data/raw/*
+data/processed/*
+
+# Mantener las carpetas pero no los datos
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
